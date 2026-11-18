@@ -1,5 +1,7 @@
 # cozylife-provision
 
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.me/marcogarzola)
+
 Connect a **CozyLife** Wi-Fi smart plug to your home network **without the CozyLife app** and without a cloud account, from a Linux machine, so you can control it locally (e.g. from Home Assistant).
 
 CozyLife devices normally require the official app for the first Wi-Fi setup. This project re-implements the app's AP-mode pairing step: a single JSON command sent to the plug over its own access point.
@@ -140,6 +142,12 @@ There was no public documentation of the pairing step. To capture it, the laptop
 
 - **Local TCP control after pairing with a fake token: under investigation.** In the first test the plug joined the home network and answered UDP discovery, but did not reply to TCP 5555 commands. Possible causes: the plug firmware disables local control until it registers with the cloud, or a known firmware bug where the TCP listener stops working until a power cycle (see [lacherogwu/homeassistant-cozylife](https://github.com/lacherogwu/homeassistant-cozylife)).
 - The script requires NetworkManager. During provisioning your machine is briefly disconnected from your home network.
+
+## Support
+
+If this project saved you some time, you can buy me a coffee ☕
+
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.me/marcogarzola)
 
 ## Disclaimer
 
